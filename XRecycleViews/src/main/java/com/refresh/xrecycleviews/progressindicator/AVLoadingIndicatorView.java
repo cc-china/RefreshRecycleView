@@ -11,6 +11,7 @@ import android.support.annotation.IntDef;
 import android.util.AttributeSet;
 import android.view.View;
 
+import com.refresh.xrecycleviews.R;
 import com.refresh.xrecycleviews.progressindicator.indicator.BallBeatIndicator;
 import com.refresh.xrecycleviews.progressindicator.indicator.BallClipRotateIndicator;
 import com.refresh.xrecycleviews.progressindicator.indicator.BallClipRotateMultipleIndicator;
