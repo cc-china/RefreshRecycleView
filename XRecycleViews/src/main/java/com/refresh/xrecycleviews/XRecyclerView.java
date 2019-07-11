@@ -75,9 +75,18 @@ public class XRecyclerView extends RecyclerView {
         }
     }
 
+    public void removeHeaderView(View view) {
+        sHeaderTypes.remove(mHeaderViews.indexOf(view));
+        mHeaderViews.remove(view);
+        if (mWrapAdapter != null) {
+            mWrapAdapter.notifyDataSetChanged();
+        }
+    }
+
     public void addHeaderView(View view) {
         sHeaderTypes.add(HEADER_INIT_INDEX + mHeaderViews.size());
         mHeaderViews.add(view);
+
         if (mWrapAdapter != null) {
             mWrapAdapter.notifyDataSetChanged();
         }
