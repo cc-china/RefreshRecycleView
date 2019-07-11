@@ -77,7 +77,7 @@ public class XRecyclerView extends RecyclerView {
 
     public void removeHeaderView(View view) {
         if (view != null && mHeaderViews.indexOf(view) >= 0) {
-            sHeaderTypes.remove(mHeaderViews.indexOf(view)+1);
+            sHeaderTypes.remove(mHeaderViews.indexOf(view));
             mHeaderViews.remove(view);
         }
         if (mWrapAdapter != null) {
